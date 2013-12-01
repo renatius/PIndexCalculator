@@ -53,16 +53,16 @@
             this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanelErrors = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.gridControlPanelErrors = new DevExpress.XtraGrid.GridControl();
-            this.gridViewPanelErrors = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControlDatasetErrors = new DevExpress.XtraGrid.GridControl();
+            this.gridViewDatasetErrors = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.defaultLookAndFeel = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.xtraTabControl = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage = new DevExpress.XtraTab.XtraTabPage();
             this.groupControlPanelData = new DevExpress.XtraEditors.GroupControl();
-            this.gridControlPanelData = new DevExpress.XtraGrid.GridControl();
-            this.gridViewPanelData = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControlInputData = new DevExpress.XtraGrid.GridControl();
+            this.gridViewInputData = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.xtraTabPagePeople = new DevExpress.XtraTab.XtraTabPage();
             this.groupControlIndividuals = new DevExpress.XtraEditors.GroupControl();
             this.gridControlPeople = new DevExpress.XtraGrid.GridControl();
@@ -80,15 +80,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.dockPanelErrors.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlPanelErrors)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewPanelErrors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlDatasetErrors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewDatasetErrors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).BeginInit();
             this.xtraTabControl.SuspendLayout();
             this.xtraTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlPanelData)).BeginInit();
             this.groupControlPanelData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlPanelData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewPanelData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlInputData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewInputData)).BeginInit();
             this.xtraTabPagePeople.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControlIndividuals)).BeginInit();
             this.groupControlIndividuals.SuspendLayout();
@@ -277,28 +277,28 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(648, 51);
+            this.barDockControlTop.Size = new System.Drawing.Size(664, 51);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 433);
-            this.barDockControlBottom.Size = new System.Drawing.Size(648, 25);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 478);
+            this.barDockControlBottom.Size = new System.Drawing.Size(664, 25);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 51);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 382);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 427);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(648, 51);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 382);
+            this.barDockControlRight.Location = new System.Drawing.Point(664, 51);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 427);
             // 
             // dockManager
             // 
@@ -318,40 +318,40 @@
             this.dockPanelErrors.Controls.Add(this.dockPanel1_Container);
             this.dockPanelErrors.Dock = DevExpress.XtraBars.Docking.DockingStyle.Bottom;
             this.dockPanelErrors.ID = new System.Guid("1bfbce2a-4c77-4862-894e-14b163911851");
-            this.dockPanelErrors.Location = new System.Drawing.Point(0, 306);
+            this.dockPanelErrors.Location = new System.Drawing.Point(0, 326);
             this.dockPanelErrors.Name = "dockPanelErrors";
-            this.dockPanelErrors.OriginalSize = new System.Drawing.Size(200, 127);
-            this.dockPanelErrors.Size = new System.Drawing.Size(648, 127);
-            this.dockPanelErrors.Text = "Panel Errors";
+            this.dockPanelErrors.OriginalSize = new System.Drawing.Size(200, 152);
+            this.dockPanelErrors.Size = new System.Drawing.Size(664, 152);
+            this.dockPanelErrors.Text = "Dataset Errors";
             // 
             // dockPanel1_Container
             // 
-            this.dockPanel1_Container.Controls.Add(this.gridControlPanelErrors);
+            this.dockPanel1_Container.Controls.Add(this.gridControlDatasetErrors);
             this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(640, 100);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(656, 125);
             this.dockPanel1_Container.TabIndex = 0;
             // 
-            // gridControlPanelErrors
+            // gridControlDatasetErrors
             // 
-            this.gridControlPanelErrors.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlPanelErrors.Location = new System.Drawing.Point(0, 0);
-            this.gridControlPanelErrors.MainView = this.gridViewPanelErrors;
-            this.gridControlPanelErrors.MenuManager = this.barManager;
-            this.gridControlPanelErrors.Name = "gridControlPanelErrors";
-            this.gridControlPanelErrors.Size = new System.Drawing.Size(640, 100);
-            this.gridControlPanelErrors.TabIndex = 0;
-            this.gridControlPanelErrors.UseEmbeddedNavigator = true;
-            this.gridControlPanelErrors.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewPanelErrors});
+            this.gridControlDatasetErrors.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlDatasetErrors.Location = new System.Drawing.Point(0, 0);
+            this.gridControlDatasetErrors.MainView = this.gridViewDatasetErrors;
+            this.gridControlDatasetErrors.MenuManager = this.barManager;
+            this.gridControlDatasetErrors.Name = "gridControlDatasetErrors";
+            this.gridControlDatasetErrors.Size = new System.Drawing.Size(656, 125);
+            this.gridControlDatasetErrors.TabIndex = 0;
+            this.gridControlDatasetErrors.UseEmbeddedNavigator = true;
+            this.gridControlDatasetErrors.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewDatasetErrors});
             // 
-            // gridViewPanelErrors
+            // gridViewDatasetErrors
             // 
-            this.gridViewPanelErrors.GridControl = this.gridControlPanelErrors;
-            this.gridViewPanelErrors.Name = "gridViewPanelErrors";
-            this.gridViewPanelErrors.OptionsBehavior.Editable = false;
-            this.gridViewPanelErrors.OptionsView.ShowColumnHeaders = false;
-            this.gridViewPanelErrors.OptionsView.ShowGroupPanel = false;
+            this.gridViewDatasetErrors.GridControl = this.gridControlDatasetErrors;
+            this.gridViewDatasetErrors.Name = "gridViewDatasetErrors";
+            this.gridViewDatasetErrors.OptionsBehavior.Editable = false;
+            this.gridViewDatasetErrors.OptionsView.ShowColumnHeaders = false;
+            this.gridViewDatasetErrors.OptionsView.ShowGroupPanel = false;
             // 
             // barButtonItem1
             // 
@@ -366,7 +366,7 @@
             this.xtraTabControl.Location = new System.Drawing.Point(0, 51);
             this.xtraTabControl.Name = "xtraTabControl";
             this.xtraTabControl.SelectedTabPage = this.xtraTabPage;
-            this.xtraTabControl.Size = new System.Drawing.Size(648, 255);
+            this.xtraTabControl.Size = new System.Drawing.Size(664, 275);
             this.xtraTabControl.TabIndex = 4;
             this.xtraTabControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage,
@@ -378,8 +378,8 @@
             // 
             this.xtraTabPage.Controls.Add(this.groupControlPanelData);
             this.xtraTabPage.Name = "xtraTabPage";
-            this.xtraTabPage.Size = new System.Drawing.Size(642, 227);
-            this.xtraTabPage.Text = "Panel Data";
+            this.xtraTabPage.Size = new System.Drawing.Size(658, 247);
+            this.xtraTabPage.Text = "Input Dataset";
             // 
             // groupControlPanelData
             // 
@@ -389,40 +389,40 @@
             this.groupControlPanelData.Appearance.Options.UseForeColor = true;
             this.groupControlPanelData.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupControlPanelData.AppearanceCaption.Options.UseFont = true;
-            this.groupControlPanelData.Controls.Add(this.gridControlPanelData);
+            this.groupControlPanelData.Controls.Add(this.gridControlInputData);
             this.groupControlPanelData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControlPanelData.Location = new System.Drawing.Point(0, 0);
             this.groupControlPanelData.Name = "groupControlPanelData";
-            this.groupControlPanelData.Size = new System.Drawing.Size(642, 227);
+            this.groupControlPanelData.Size = new System.Drawing.Size(658, 247);
             this.groupControlPanelData.TabIndex = 0;
             this.groupControlPanelData.Text = "Observations";
             // 
-            // gridControlPanelData
+            // gridControlInputData
             // 
-            this.gridControlPanelData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlPanelData.Location = new System.Drawing.Point(2, 22);
-            this.gridControlPanelData.MainView = this.gridViewPanelData;
-            this.gridControlPanelData.MenuManager = this.barManager;
-            this.gridControlPanelData.Name = "gridControlPanelData";
-            this.gridControlPanelData.Size = new System.Drawing.Size(638, 203);
-            this.gridControlPanelData.TabIndex = 0;
-            this.gridControlPanelData.UseEmbeddedNavigator = true;
-            this.gridControlPanelData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewPanelData});
+            this.gridControlInputData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlInputData.Location = new System.Drawing.Point(2, 22);
+            this.gridControlInputData.MainView = this.gridViewInputData;
+            this.gridControlInputData.MenuManager = this.barManager;
+            this.gridControlInputData.Name = "gridControlInputData";
+            this.gridControlInputData.Size = new System.Drawing.Size(654, 223);
+            this.gridControlInputData.TabIndex = 0;
+            this.gridControlInputData.UseEmbeddedNavigator = true;
+            this.gridControlInputData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewInputData});
             // 
-            // gridViewPanelData
+            // gridViewInputData
             // 
-            this.gridViewPanelData.GridControl = this.gridControlPanelData;
-            this.gridViewPanelData.Name = "gridViewPanelData";
-            this.gridViewPanelData.OptionsBehavior.Editable = false;
-            this.gridViewPanelData.OptionsView.ShowAutoFilterRow = true;
-            this.gridViewPanelData.OptionsView.ShowGroupPanel = false;
+            this.gridViewInputData.GridControl = this.gridControlInputData;
+            this.gridViewInputData.Name = "gridViewInputData";
+            this.gridViewInputData.OptionsBehavior.Editable = false;
+            this.gridViewInputData.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewInputData.OptionsView.ShowGroupPanel = false;
             // 
             // xtraTabPagePeople
             // 
             this.xtraTabPagePeople.Controls.Add(this.groupControlIndividuals);
             this.xtraTabPagePeople.Name = "xtraTabPagePeople";
-            this.xtraTabPagePeople.Size = new System.Drawing.Size(642, 226);
+            this.xtraTabPagePeople.Size = new System.Drawing.Size(642, 227);
             this.xtraTabPagePeople.Text = "Individuals";
             // 
             // groupControlIndividuals
@@ -433,7 +433,7 @@
             this.groupControlIndividuals.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControlIndividuals.Location = new System.Drawing.Point(0, 0);
             this.groupControlIndividuals.Name = "groupControlIndividuals";
-            this.groupControlIndividuals.Size = new System.Drawing.Size(642, 226);
+            this.groupControlIndividuals.Size = new System.Drawing.Size(642, 227);
             this.groupControlIndividuals.TabIndex = 0;
             this.groupControlIndividuals.Text = "Individuals";
             // 
@@ -444,7 +444,7 @@
             this.gridControlPeople.MainView = this.gridViewPeople;
             this.gridControlPeople.MenuManager = this.barManager;
             this.gridControlPeople.Name = "gridControlPeople";
-            this.gridControlPeople.Size = new System.Drawing.Size(638, 202);
+            this.gridControlPeople.Size = new System.Drawing.Size(638, 203);
             this.gridControlPeople.TabIndex = 0;
             this.gridControlPeople.UseEmbeddedNavigator = true;
             this.gridControlPeople.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -462,7 +462,7 @@
             // 
             this.xtraTabPagePovertyPersistanceRatios.Controls.Add(this.groupControlPovertyPersistanceRatios);
             this.xtraTabPagePovertyPersistanceRatios.Name = "xtraTabPagePovertyPersistanceRatios";
-            this.xtraTabPagePovertyPersistanceRatios.Size = new System.Drawing.Size(642, 226);
+            this.xtraTabPagePovertyPersistanceRatios.Size = new System.Drawing.Size(642, 227);
             this.xtraTabPagePovertyPersistanceRatios.Text = "Poverty Persistence Probabilities";
             // 
             // groupControlPovertyPersistanceRatios
@@ -473,7 +473,7 @@
             this.groupControlPovertyPersistanceRatios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControlPovertyPersistanceRatios.Location = new System.Drawing.Point(0, 0);
             this.groupControlPovertyPersistanceRatios.Name = "groupControlPovertyPersistanceRatios";
-            this.groupControlPovertyPersistanceRatios.Size = new System.Drawing.Size(642, 226);
+            this.groupControlPovertyPersistanceRatios.Size = new System.Drawing.Size(642, 227);
             this.groupControlPovertyPersistanceRatios.TabIndex = 0;
             this.groupControlPovertyPersistanceRatios.Text = "Poverty Persistence Probabilities";
             // 
@@ -484,7 +484,7 @@
             this.gridControlPovertyPersistanceRatios.MainView = this.gridViewPovertyPersistanceRatios;
             this.gridControlPovertyPersistanceRatios.MenuManager = this.barManager;
             this.gridControlPovertyPersistanceRatios.Name = "gridControlPovertyPersistanceRatios";
-            this.gridControlPovertyPersistanceRatios.Size = new System.Drawing.Size(638, 202);
+            this.gridControlPovertyPersistanceRatios.Size = new System.Drawing.Size(638, 203);
             this.gridControlPovertyPersistanceRatios.TabIndex = 0;
             this.gridControlPovertyPersistanceRatios.UseEmbeddedNavigator = true;
             this.gridControlPovertyPersistanceRatios.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -501,7 +501,7 @@
             // 
             this.xtraTabPagePovertyIndex.Controls.Add(this.groupControl1);
             this.xtraTabPagePovertyIndex.Name = "xtraTabPagePovertyIndex";
-            this.xtraTabPagePovertyIndex.Size = new System.Drawing.Size(642, 226);
+            this.xtraTabPagePovertyIndex.Size = new System.Drawing.Size(642, 227);
             this.xtraTabPagePovertyIndex.Text = "Poverty Indices";
             // 
             // groupControl1
@@ -512,7 +512,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(642, 226);
+            this.groupControl1.Size = new System.Drawing.Size(642, 227);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Poverty Indices";
             // 
@@ -523,7 +523,7 @@
             this.gridControlPovertIndexes.MainView = this.gridViewPovertyIndexes;
             this.gridControlPovertIndexes.MenuManager = this.barManager;
             this.gridControlPovertIndexes.Name = "gridControlPovertIndexes";
-            this.gridControlPovertIndexes.Size = new System.Drawing.Size(638, 202);
+            this.gridControlPovertIndexes.Size = new System.Drawing.Size(638, 203);
             this.gridControlPovertIndexes.TabIndex = 0;
             this.gridControlPovertIndexes.UseEmbeddedNavigator = true;
             this.gridControlPovertIndexes.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -545,7 +545,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 458);
+            this.ClientSize = new System.Drawing.Size(664, 503);
             this.Controls.Add(this.xtraTabControl);
             this.Controls.Add(this.dockPanelErrors);
             this.Controls.Add(this.barDockControlLeft);
@@ -560,15 +560,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             this.dockPanelErrors.ResumeLayout(false);
             this.dockPanel1_Container.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlPanelErrors)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewPanelErrors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlDatasetErrors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewDatasetErrors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl)).EndInit();
             this.xtraTabControl.ResumeLayout(false);
             this.xtraTabPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControlPanelData)).EndInit();
             this.groupControlPanelData.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlPanelData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewPanelData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlInputData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewInputData)).EndInit();
             this.xtraTabPagePeople.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControlIndividuals)).EndInit();
             this.groupControlIndividuals.ResumeLayout(false);
@@ -609,8 +609,8 @@
         private DevExpress.XtraTab.XtraTabControl xtraTabControl;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage;
         private DevExpress.XtraEditors.GroupControl groupControlPanelData;
-        private DevExpress.XtraGrid.GridControl gridControlPanelData;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridViewPanelData;
+        private DevExpress.XtraGrid.GridControl gridControlInputData;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewInputData;
         private DevExpress.XtraTab.XtraTabPage xtraTabPagePeople;
         private DevExpress.XtraEditors.GroupControl groupControlIndividuals;
         private DevExpress.XtraGrid.GridControl gridControlPeople;
@@ -622,8 +622,8 @@
         private DevExpress.XtraBars.Docking.DockManager dockManager;
         private DevExpress.XtraBars.Docking.DockPanel dockPanelErrors;
         private DevExpress.XtraBars.Docking.ControlContainer dockPanel1_Container;
-        private DevExpress.XtraGrid.GridControl gridControlPanelErrors;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridViewPanelErrors;
+        private DevExpress.XtraGrid.GridControl gridControlDatasetErrors;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewDatasetErrors;
         private DevExpress.XtraBars.BarSubItem menuView;
         private DevExpress.XtraBars.BarButtonItem biViewDatasetErrors;
         private DevExpress.XtraTab.XtraTabPage xtraTabPagePovertyIndex;

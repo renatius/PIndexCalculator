@@ -53,18 +53,18 @@ namespace PICalculator
         }
 
         private void ClearControls() {
-            gridControlPanelData.DataSource = null;
+            gridControlInputData.DataSource = null;
             gridControlPeople.DataSource = null;
             gridControlPovertyPersistanceRatios.DataSource = null;
-            gridControlPanelErrors.DataSource = null;
+            gridControlDatasetErrors.DataSource = null;
             gridControlPovertIndexes.DataSource = null;
         }
 
         private void OnLoadPanelData() {
-            gridControlPanelData.DataSource = theApp.Observations;
+            gridControlInputData.DataSource = theApp.Observations;
             gridControlPeople.DataSource = theApp.People;
             gridControlPovertyPersistanceRatios.DataSource = theApp.PovertyPersistenceRatios;
-            gridControlPanelErrors.DataSource = theApp.Errors;
+            gridControlDatasetErrors.DataSource = theApp.Errors;
 
             if (theApp.Errors.Count() > 0) {
                 dockPanelErrors.Visibility = DockVisibility.Visible;

@@ -13,19 +13,19 @@ namespace PIndexCalculator.Model.Input
     {
         private List<DatasetError> errors;        
         private IEnumerable<Observation> observations;
-        private PersonFactory personFactory;
+        private IEnumerable<Person> people;
         private List<PovertyPersistenceRatio> povertyPersistenceRatios;
 
         public bool IsValid {
-            get { return errors.Count > 0; }
+            get { return errors.Count == 0; }
         }
 
         public IEnumerable<Observation> Observations {
-            get { return Observations; }
+            get { return observations; }
         }
 
         public IEnumerable<Person> People {
-            get { return personFactory.GetPeople(); }
+            get { return people; }
         }
 
         public IEnumerable<DatasetError> Errors {
@@ -46,15 +46,18 @@ namespace PIndexCalculator.Model.Input
 
             this.povertyPersistenceRatios = new List<PovertyPersistenceRatio>();
             this.errors = new List<DatasetError>();
+
             this.observations = observations;
 
             // transform observations in the set of people observed
-            personFactory = new PersonFactory();
+            var personFactory = new PersonFactory();
 
             foreach (var o in observations) {
                 var person = personFactory.CreateInstance(o);
                 person.AddObservation(o.Year, o.IsPoor, o.PovertyGap);
             }
+
+            people = new List<Person>(personFactory.GetPeople());
 
             // get year min e year max
             YearMin = (from x in observations
@@ -114,7 +117,7 @@ namespace PIndexCalculator.Model.Input
         }
 
         private void ValidatePeople() {
-            foreach (var p in People) Validate(p);
+            foreach (var p in people) Validate(p);
         }
 
         private void Validate(Person p) {
@@ -132,11 +135,11 @@ namespace PIndexCalculator.Model.Input
         private void CalculatePovertyPersistenceRatios() {
             var ratios = new List<PovertyPersistenceRatio>();
 
-            var countries = (from p in People
+            var countries = (from p in people
                              select p.Country).Distinct();
 
             foreach (var country in countries) {
-                var calculator = new PovertyPersistenceRatioCalculator(People);
+                var calculator = new PovertyPersistenceRatioCalculator(people);
                 ratios.AddRange(calculator.CalculateRatios(country, YearMin, YearMax));
             }
 
