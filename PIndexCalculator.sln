@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIndexCalculator.Model", "PIndexCalculator.Model\PIndexCalculator.Model.csproj", "{E9AB2F21-ED7B-4A49-BC31-07589AACDD58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIndexCalculator.Model.Tests", "PIndexCalculator.Model.Tests\PIndexCalculator.Model.Tests.csproj", "{DD191507-96B1-4CD5-8DEA-D79A55C9A001}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PICalculator", "PICalculator\PICalculator.csproj", "{8D526CE6-1BB6-40A7-9D23-85CB38EC7756}"
 EndProject
 Global
@@ -17,10 +15,6 @@ Global
 		{E9AB2F21-ED7B-4A49-BC31-07589AACDD58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9AB2F21-ED7B-4A49-BC31-07589AACDD58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9AB2F21-ED7B-4A49-BC31-07589AACDD58}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD191507-96B1-4CD5-8DEA-D79A55C9A001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD191507-96B1-4CD5-8DEA-D79A55C9A001}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD191507-96B1-4CD5-8DEA-D79A55C9A001}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD191507-96B1-4CD5-8DEA-D79A55C9A001}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8D526CE6-1BB6-40A7-9D23-85CB38EC7756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8D526CE6-1BB6-40A7-9D23-85CB38EC7756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D526CE6-1BB6-40A7-9D23-85CB38EC7756}.Release|Any CPU.ActiveCfg = Release|Any CPU

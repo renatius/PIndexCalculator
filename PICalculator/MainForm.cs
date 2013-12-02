@@ -65,6 +65,7 @@ namespace PICalculator
             gridControlPeople.DataSource = theApp.People;
             gridControlPovertyPersistanceRatios.DataSource = theApp.PovertyPersistenceRatios;
             gridControlDatasetErrors.DataSource = theApp.Errors;
+            gridControlPovertIndexes.DataSource = theApp.PovertyIndices;
 
             if (theApp.Errors.Count() > 0) {
                 dockPanelErrors.Visibility = DockVisibility.Visible;
@@ -77,22 +78,7 @@ namespace PICalculator
             }
             else {
                 dockPanelErrors.Visibility = DockVisibility.Hidden;
-                LoadPovertyIndexes();
             }
-        }
-
-        private void LoadPovertyIndexes() {
-
-            /* •—————————————————————————————————————————————————————————————————————————————————————————————————•
-               | if (panelData.IsValid) {                                                              |
-               |     double[] alphaValues = { 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0 }; |
-               |     foreach (var alpha in alphaValues) {                                              |
-               |         indexes.AddRange(panelData.CalculatePovertyIndex(alpha));                     |
-               |     }                                                                                 |
-               |     gridControlPovertIndexes.DataSource =                                             |
-               |         indexes;                                                                      |
-               | }                                                                                     |
-               •———————————————————————————————————————————————————————————————————————————————————————• */
         }
 
         private void biExit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
@@ -112,24 +98,20 @@ namespace PICalculator
         private void biSavePovertyPersistenceRatios_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
             saveFileDialog.FileName = "PPProbs.txt";
             if (saveFileDialog.ShowDialog(this) == DialogResult.OK) {
-                var writer = new FileHelperEngine<PovertyPersistenceRatio>();
-                writer.WriteFile(saveFileDialog.FileName, theApp.PovertyPersistenceRatios);
+                theApp.ExportPovertyPersistenceProbabilitiesToCsv(saveFileDialog.FileName);
             }
         }
 
         private void biSavePovertyIndexes_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
-            /* •————————————————————————————————————————————————————————————————————————•
-               | saveFileDialog.FileName = "PIndices.txt";                    |
-               | if (saveFileDialog.ShowDialog(this) == DialogResult.OK) {    |
-               |     var writer = new FileHelperEngine<PovertyIndexResult>(); |
-               |     writer.WriteFile(saveFileDialog.FileName, indexes);      |
-               | }                                                            |
-               •——————————————————————————————————————————————————————————————• */
+               saveFileDialog.FileName = "PIndices.txt";                    
+               if (saveFileDialog.ShowDialog(this) == DialogResult.OK) {
+                   theApp.ExportPovertyIndicesToCsv(saveFileDialog.FileName);
+               }                                                            
         }
 
         private void menuExport_Popup(object sender, EventArgs e) {
-            biSavePovertyIndexes.Enabled = false;
-            biSavePovertyPersistenceRatios.Enabled = theApp.PovertyPersistenceRatios.Count() > 0;
+            biSavePovertyIndexes.Enabled = true;
+            biSavePovertyPersistenceRatios.Enabled = true;
         }
 
         private void biHelpAbout_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {

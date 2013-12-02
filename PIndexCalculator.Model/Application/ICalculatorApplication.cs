@@ -17,11 +17,16 @@ namespace PIndexCalculator.Model.Application
         IEnumerable<Person> People { get; }
 
         // there are errors in the dataset?
-        IEnumerable<DatasetError> Errors { get; }
+        IEnumerable<ApplicationError> Errors { get; }
 
         // the Poverty persistance ratios
         IEnumerable<PovertyPersistenceRatio> PovertyPersistenceRatios { get; }
 
+        // The poverty indices
+        IEnumerable<PovertyIndexResult> PovertyIndices { get; }
+
         void LoadCsvFile(string filename);
+        void ExportPovertyPersistenceProbabilitiesToCsv(string filename);
+        void ExportPovertyIndicesToCsv(string filename);
     }
 }

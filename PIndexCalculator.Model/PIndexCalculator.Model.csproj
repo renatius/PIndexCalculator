@@ -56,9 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\ApplicationError.cs" />
     <Compile Include="Application\CalculatorApplication.cs" />
     <Compile Include="Application\ICalculatorApplication.cs" />
+    <Compile Include="Calculators\EmergencyEffectCalculator.cs" />
+    <Compile Include="Calculators\PovertyIndexCalculator.cs" />
     <Compile Include="Calculators\PovertyPersistenceRatioCalculator.cs" />
+    <Compile Include="Calculators\SequenceEffectCalculator.cs" />
     <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="Exceptions\Postcondition.cs" />
     <Compile Include="Exceptions\Precondition.cs" />
@@ -68,9 +72,15 @@
     <Compile Include="Input\DatasetError.cs" />
     <Compile Include="Input\Person.cs" />
     <Compile Include="Input\Dataset.cs" />
+    <Compile Include="Internal\BinomialCoefficientChooseTwo.cs" />
+    <Compile Include="Output\PanelError.cs" />
     <Compile Include="Internal\PersonFactory.cs" />
     <Compile Include="Input\PovertyStatus.cs" />
+    <Compile Include="Internal\Sum.cs" />
+    <Compile Include="Output\PanelData.cs" />
+    <Compile Include="Output\PovertyIndexResult.cs" />
     <Compile Include="Output\PovertyPersistenceRatio.cs" />
+    <Compile Include="Output\SequenceEffect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
