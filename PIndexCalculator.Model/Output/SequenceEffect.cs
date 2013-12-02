@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PIndexCalculator.Model.Output
+namespace PICalculator.Model.Output
 {
     public class SequenceEffect
     {

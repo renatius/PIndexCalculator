@@ -1,10 +1,10 @@
-﻿using PIndexCalculator.Model.Exceptions;
-using PIndexCalculator.Model.Input;
+﻿using PICalculator.Model.Exceptions;
+using PICalculator.Model.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PIndexCalculator.Model.Calculators
+namespace PICalculator.Model.Calculators
 {
     public class EmergencyEffectCalculator
     {

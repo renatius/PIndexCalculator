@@ -7,9 +7,9 @@ using DevExpress.XtraBars.Docking;
 using DevExpress.XtraEditors;
 using FileHelpers;
 using System.Diagnostics;
-using PIndexCalculator.Model.Application;
-using PIndexCalculator.Model.Exceptions;
-using PIndexCalculator.Model.Output;
+using PICalculator.Model.Application;
+using PICalculator.Model.Exceptions;
+using PICalculator.Model.Output;
 
 namespace PICalculator
 {

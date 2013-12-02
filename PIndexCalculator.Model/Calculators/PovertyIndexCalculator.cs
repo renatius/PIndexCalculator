@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PIndexCalculator.Model.Calculators
+namespace PICalculator.Model.Calculators
 {
     public class PovertyIndexCalculator
     {

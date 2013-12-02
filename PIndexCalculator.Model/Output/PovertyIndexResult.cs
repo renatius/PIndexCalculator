@@ -1,7 +1,7 @@
 ﻿using System;
 using FileHelpers;
 
-namespace PIndexCalculator.Model.Output
+namespace PICalculator.Model.Output
 {
 
     [DelimitedRecord(";")]
@@ -159,5 +159,11 @@ namespace PIndexCalculator.Model.Output
             set { mValue5 = value; }
         }
 
+        private double mDecayFactor;
+
+        public double DecayFactor {
+            get { return mDecayFactor; }
+            set { mDecayFactor = value; }
+        }
     }
 }

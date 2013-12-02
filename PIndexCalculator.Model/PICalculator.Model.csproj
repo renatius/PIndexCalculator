@@ -7,8 +7,8 @@
     <ProjectGuid>{E9AB2F21-ED7B-4A49-BC31-07589AACDD58}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PIndexCalculator.Model</RootNamespace>
-    <AssemblyName>PIndexCalculator.Model</AssemblyName>
+    <RootNamespace>PICalculator.Model</RootNamespace>
+    <AssemblyName>PICalculator.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

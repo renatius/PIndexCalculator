@@ -1,4 +1,4 @@
-﻿namespace PIndexCalculator.Model.Input
+﻿namespace PICalculator.Model.Input
 {
     /// <summary>
     /// The poverty status of an individual in a given year

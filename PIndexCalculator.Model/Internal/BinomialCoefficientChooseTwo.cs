@@ -1,7 +1,7 @@
-﻿using PIndexCalculator.Model.Exceptions;
+﻿using PICalculator.Model.Exceptions;
 using System;
 
-namespace PIndexCalculator.Model.Internal
+namespace PICalculator.Model.Internal
 {
     // a table of binomial coefficients
     static class BinomialCoefficientChooseTwo

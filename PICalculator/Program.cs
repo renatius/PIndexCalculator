@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using DevExpress.LookAndFeel;
-using PIndexCalculator.Model.Application;
+using PICalculator.Model.Application;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
 

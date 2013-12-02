@@ -1,4 +1,4 @@
-﻿namespace PIndexCalculator.Model.Input 
+﻿namespace PICalculator.Model.Input 
 {
     
     public class DatasetError

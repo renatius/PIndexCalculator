@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using PIndexCalculator.Model.Input;
-using PIndexCalculator.Model.Exceptions;
-using PIndexCalculator.Model.Output;
+using PICalculator.Model.Input;
+using PICalculator.Model.Exceptions;
+using PICalculator.Model.Output;
 
-namespace PIndexCalculator.Model.Calculators
+namespace PICalculator.Model.Calculators
 {
     public class PovertyPersistenceRatioCalculator
     {

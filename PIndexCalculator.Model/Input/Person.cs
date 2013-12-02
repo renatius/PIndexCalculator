@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
-using PIndexCalculator.Model.Exceptions;
+using PICalculator.Model.Exceptions;
 
-namespace PIndexCalculator.Model.Input
+namespace PICalculator.Model.Input
 {
     /// <summary>
     /// Each instance of class Person represents an individual
@@ -104,6 +104,18 @@ namespace PIndexCalculator.Model.Input
                     if (IsPoorInYear(year))
                         result.Add(year);
                 }
+            }
+
+            return result;
+        }
+
+        public int GetTrailingNonPovertyYears() {
+            int result = 0;
+
+            for (int year = MaxYear; year >= MinYear; year--) {
+                if (IsPoorInYear(year))
+                    break;
+                result += 1;
             }
 
             return result;

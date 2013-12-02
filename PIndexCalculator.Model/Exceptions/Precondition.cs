@@ -1,4 +1,4 @@
-﻿namespace PIndexCalculator.Model.Exceptions
+﻿namespace PICalculator.Model.Exceptions
 {
     public static class Precondition
     {

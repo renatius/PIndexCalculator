@@ -1,13 +1,13 @@
 ﻿using FileHelpers;
-using PIndexCalculator.Model.Calculators;
-using PIndexCalculator.Model.Exceptions;
-using PIndexCalculator.Model.Internal;
-using PIndexCalculator.Model.Output;
+using PICalculator.Model.Calculators;
+using PICalculator.Model.Exceptions;
+using PICalculator.Model.Internal;
+using PICalculator.Model.Output;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PIndexCalculator.Model.Input
+namespace PICalculator.Model.Input
 {
     public class Dataset : IDataset
     {

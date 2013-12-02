@@ -1,8 +1,8 @@
-﻿using PIndexCalculator.Model.Output;
+﻿using PICalculator.Model.Output;
 using System;
 using System.Collections.Generic;
 
-namespace PIndexCalculator.Model.Input
+namespace PICalculator.Model.Input
 {
     interface IDataset
     {

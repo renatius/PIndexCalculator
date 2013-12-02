@@ -1,9 +1,9 @@
-﻿using PIndexCalculator.Model.Input;
-using PIndexCalculator.Model.Output;
+﻿using PICalculator.Model.Input;
+using PICalculator.Model.Output;
 using System;
 using System.Collections.Generic;
 
-namespace PIndexCalculator.Model.Application
+namespace PICalculator.Model.Application
 {
     public interface ICalculatorApplication
     {

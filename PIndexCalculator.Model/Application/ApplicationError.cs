@@ -1,4 +1,4 @@
-﻿namespace PIndexCalculator.Model.Application
+﻿namespace PICalculator.Model.Application
 {
     public class ApplicationError
     {

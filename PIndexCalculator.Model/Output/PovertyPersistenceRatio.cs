@@ -1,8 +1,8 @@
 ﻿using System;
 using FileHelpers;
-using PIndexCalculator.Model.Exceptions;
+using PICalculator.Model.Exceptions;
 
-namespace PIndexCalculator.Model.Output
+namespace PICalculator.Model.Output
 {
     [DelimitedRecord(";")]
     public sealed class PovertyPersistenceRatio

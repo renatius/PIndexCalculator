@@ -1,7 +1,7 @@
 ﻿using System;
 using FileHelpers;
 
-namespace PIndexCalculator.Model.Input
+namespace PICalculator.Model.Input
 {
     /// <summary>
     /// A single observation, as contained in the input file.

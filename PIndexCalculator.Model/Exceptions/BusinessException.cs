@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace PIndexCalculator.Model.Exceptions
+namespace PICalculator.Model.Exceptions
 {
     /// <summary>
     /// 

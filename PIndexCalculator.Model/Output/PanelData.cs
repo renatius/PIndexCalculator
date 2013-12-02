@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using PIndexCalculator.Model.Input;
-using PIndexCalculator.Model.Exceptions;
-using PIndexCalculator.Model.Internal;
-using PIndexCalculator.Model.Calculators;
+using PICalculator.Model.Input;
+using PICalculator.Model.Exceptions;
+using PICalculator.Model.Internal;
+using PICalculator.Model.Calculators;
+using System;
 
-namespace PIndexCalculator.Model.Output
+namespace PICalculator.Model.Output
 {
     public class PanelData
     {
@@ -17,6 +18,7 @@ namespace PIndexCalculator.Model.Output
         private Dictionary<Person, double> emergencyEffects = new Dictionary<Person, double>();
         private Dictionary<Person, double> bossertIndexes = new Dictionary<Person, double>();
         private Dictionary<Person, double> bcd2Indexes = new Dictionary<Person, double>();
+        private Dictionary<Person, double> decayFactors = new Dictionary<Person, double>();
 
         // observation stats
         private int yearMin;
@@ -83,6 +85,7 @@ namespace PIndexCalculator.Model.Output
                 CalculateSequenceEffects();
                 CalculateBossertIndexes();
                 CalculateBCD2Indexes();
+                CalculateDecayFactors();
             }
         }
 
@@ -129,6 +132,24 @@ namespace PIndexCalculator.Model.Output
                 sequenceEffects[p] = calculator.CalculateFor(p);
             }
         }
+
+        private void CalculateDecayFactors() {
+
+            var poors = from p in people
+                        where p.IsEverPoor
+                        select p;
+
+            foreach (var p in poors) {
+                var z = p.GetTrailingNonPovertyYears();
+
+                var numerator = Math.Pow(z, 2.0);
+                var denominator = Math.Pow(z + 1, 2.0);
+
+                decayFactors[p] =                  
+                    1.0 - (numerator / denominator);
+            }
+        }
+
 
         private void CalculateEmergencyEffects() {
             var poors = from p in people
@@ -178,6 +199,10 @@ namespace PIndexCalculator.Model.Output
             return bcd2Indexes[p];
         }
 
+        private double GetDecayFactor(Person p) {
+            return decayFactors[p];
+        }
+
         public List<PovertyIndexResult> CalculatePovertyIndex(double alpha) {
             Precondition.Require(IsValid,
                 "Cannot calculate Poverty Index when panel data contain errors");
@@ -215,7 +240,8 @@ namespace PIndexCalculator.Model.Output
                     SE_EE_2 = calculator.Calculate(sequenceEffect.V2, emergencyEffect),
                     SE_EE_3 = calculator.Calculate(sequenceEffect.V3, emergencyEffect),
                     SE_EE_4 = calculator.Calculate(sequenceEffect.V4, emergencyEffect),
-                    SE_EE_5 = calculator.Calculate(sequenceEffect.V5, emergencyEffect)
+                    SE_EE_5 = calculator.Calculate(sequenceEffect.V5, emergencyEffect),
+                    DecayFactor = GetDecayFactor(p)
                 };
 
                 result.Add(pi);

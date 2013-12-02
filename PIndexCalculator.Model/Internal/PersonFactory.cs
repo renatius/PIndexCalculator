@@ -1,8 +1,8 @@
-﻿using PIndexCalculator.Model.Input;
+﻿using PICalculator.Model.Input;
 using System;
 using System.Collections.Generic;
 
-namespace PIndexCalculator.Model.Internal
+namespace PICalculator.Model.Internal
 {
     class PersonFactory
     {

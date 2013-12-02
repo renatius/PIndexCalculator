@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIndexCalculator.Model", "PIndexCalculator.Model\PIndexCalculator.Model.csproj", "{E9AB2F21-ED7B-4A49-BC31-07589AACDD58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PICalculator.Model", "PIndexCalculator.Model\PICalculator.Model.csproj", "{E9AB2F21-ED7B-4A49-BC31-07589AACDD58}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PICalculator", "PICalculator\PICalculator.csproj", "{8D526CE6-1BB6-40A7-9D23-85CB38EC7756}"
 EndProject

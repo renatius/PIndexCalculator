@@ -142,9 +142,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PIndexCalculator.Model\PIndexCalculator.Model.csproj">
+    <ProjectReference Include="..\PIndexCalculator.Model\PICalculator.Model.csproj">
       <Project>{e9ab2f21-ed7b-4a49-bc31-07589aacdd58}</Project>
-      <Name>PIndexCalculator.Model</Name>
+      <Name>PICalculator.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

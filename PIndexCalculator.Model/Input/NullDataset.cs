@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using PIndexCalculator.Model.Output;
+using PICalculator.Model.Output;
 
-namespace PIndexCalculator.Model.Input
+namespace PICalculator.Model.Input
 {
     public class NullDataset : IDataset
     {
