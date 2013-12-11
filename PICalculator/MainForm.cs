@@ -1,15 +1,12 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-using System.IO;
-using System.Windows.Forms;
-using DevExpress.XtraBars.Docking;
+﻿using DevExpress.XtraBars.Docking;
 using DevExpress.XtraEditors;
-using FileHelpers;
-using System.Diagnostics;
 using PICalculator.Model.Application;
 using PICalculator.Model.Exceptions;
-using PICalculator.Model.Output;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace PICalculator
 {
